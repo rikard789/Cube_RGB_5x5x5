@@ -22,6 +22,7 @@ volatile int flag2 = 0;
 volatile int flag3 = 0;
 volatile int flag4 = 0;
 
+//declaration of the structure which is map of the cube
 SRGB rgb_leds [ _LED_CNT ];
 /// pin 1 - 0.....24  - first wall
 /// pin 2 - 25.....49 - second wall
@@ -56,22 +57,37 @@ void win_end_game(void);			//here we show word "win" when somebody wins the game
 void display(void);				//here we show snake and food on our cube
 void PORTB_IRQHandler(void);			// this function sets flag when we receive interrupt from the keyboard
 
-//main loop
+
+///////////////////////////////////////////////	
+/////////////**mainloop**//////////////////////	
+///////////////////////////////////////////////
+
 int main(void) {
 	
-	//here we prepare things necessary for our project 
+	//preparation of things necessary for project 
 	InitializeCube();
 	buttonsInitialize();
 	fill_Data();
 
-	// we use this to turn off the leds which were lit from old program
+	//not neccesary  
 	clear_all();		
 	wait(5000);
 
+	
+	//functions under are used for various demonstration effects
+	
+	//cycle_color_change(	rgb_leds);
+	//flying_strips1( pasek);
+	//flying_strips2( pasek);
+	//flying_strips3( pasek, data);
+	//arrow( pasek, data);
+	//disappering_cubes(pasek, data);	
+	
+	
 	//this function light up leds where snake starts and where food is placed
 	snake_start();
 
-	// here we have loop where our game takes place
+	//loop where snake game takes place
 	while(!defeat_or_win)
 	{	
 		snake_move(); 
@@ -87,6 +103,9 @@ int main(void) {
 	win_end_game();
 
 }
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
 
 //here we create reference to data from SRGB struct for our 3D matrix data[5][5][5]
 void fill_Data(void)
