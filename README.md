@@ -20,3 +20,5 @@ Working demonstration(pl)(click on the image below to watch on youtube)
 - matrix keyboard with 4x4 buttons
 
 
+# Authors:
+Krzysztof Reczek EiT3
