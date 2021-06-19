@@ -27,7 +27,7 @@ wymiarach.
 # Plan realizacji:
 Pierwszym krokiem będzie zlutowanie wszystkich diod RGB w kostkę LED 5x5x5.
 Następnie zrealizowane będzie podłączenie płytki FRDM-KL05Z z kostką LED i klawiaturą
-matrycową 4x4.Po podłączeniu wszystkich komponentów sprawdzane będzie działanie
+matrycową 4x4. Po podłączeniu wszystkich komponentów sprawdzane będzie działanie
 programu.
 W ramach projektu będzie stworzona biblioteka do kostki LED 5x5x5 oraz zostanie
 wykorzystana biblioteka z laboratoriów, która służy do obsługi klawiatury matrycowej 4x4.
