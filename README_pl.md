@@ -30,4 +30,4 @@ Następnie zrealizowane będzie podłączenie płytki FRDM-KL05Z z kostką LED i
 matrycową 4x4. Po podłączeniu wszystkich komponentów sprawdzane będzie działanie
 programu.
 W ramach projektu będzie stworzona biblioteka do kostki LED 5x5x5 oraz zostanie
-wykorzystana biblioteka z laboratoriów, która służy do obsługi klawiatury matrycowej 4x4.
+wykorzystana biblioteka z laboratoriów, która pozwala na użycie przycisków klawiatury matrycowej 4x4.
