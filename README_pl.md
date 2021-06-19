@@ -21,10 +21,8 @@ Oznacza to, że aby w pełni zakodować kolor musi zostać przesłane 24 bity. W
 że pierwsza sekwencja dotyczy diody umieszczonej najbliżej mikrokontrolera, a każda
 kolejna następujących po sobie diod w łańcuchu. Powoduje to, że aby zmienić stan
 pojedynczej diody musimy podać dane dla wszystkich diod w linii.
-Klawiatura matrycowa posiada 16 przycisków, 7 z nich będzie wykorzystanych w projekcie
-przy realizacji gry snake. Sześć przycisków użytych zostanie do sterowania “wężem” w 3
-wymiarach. Siódmy przycisk zostanie wykorzystany jako start/reset dla programu. Przy
-ewentualnym rozwinięciu zostanie użyty 8 przycisk do przechodzenia między trybami.
+Klawiatura matrycowa posiada 16 przycisków. Sześć przycisków użytych zostanie do sterowania “wężem” w 3
+wymiarach.
 
 # Plan realizacji:
 Pierwszym krokiem będzie zlutowanie wszystkich diod RGB w kostkę LED 5x5x5.
