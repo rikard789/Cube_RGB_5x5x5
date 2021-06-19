@@ -1,8 +1,12 @@
-# Cube RGB with dimensions 5x5x5
+# **Cube RGB with dimensions 5x5x5**
 
 Project based on KL05Z
 
 The aim of the project was to create a cube where games such as snake can be played and various visual effects can be shown.
+
+# System operation:
+When you turn on KL05Z board it starts a 3D snake game. It can be seen on the cube as moving 3 LEDs, where blue LED is the head of the snake and the green LEDs are body. The yellow light indicates the food that the snake is collecting. Snake can pick food only with its head and when food is picked his body is lengthened by one.
+<br />
 
 
 # Implemented functions:
