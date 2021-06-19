@@ -10,9 +10,9 @@ The aim of the project was to create a cube where games such as snake can be pla
 2. Setting the color of the selected LED in the color mapping of the cube
 3. Creating a line at a selected position and length in the cube mapping
 4. Sending the color map to the cube
-<br/ >
+<br />
 Additionally, 5 visual effects have been created that are located in the library created for the cube
-<br/ >
+<br />
 
 Working demonstration(pl)(click on the image below to watch on youtube) 
 
