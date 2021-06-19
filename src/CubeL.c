@@ -21,7 +21,7 @@ void InitializeCube()
 
 //////////////////////////////////////////////////////////////////////////////////////////
 //***********here i have functions which send bits 0 and 1 to LEDS*************//
-//***********amount of nopes we use here depends on which type od diode we use (here we use WS2811)*******//
+//***********amount of nopes we use here depends on which type of diode we use (here we use WS2811)*******//
 static void set1(int x)
 {
 	PTB->PDOR |= (1 << pins[x]);
