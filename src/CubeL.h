@@ -3,7 +3,7 @@
 
 #define Edgesize 5	// length of one side of the cube
 #define _LED_CNT 125	//here we define how many leds our cube have (int this project we use 5x5x5 cube so its 125)
-#define PTB1 6        	//here we define which pins we use for our cube
+#define PTB1 6        	//here we define which pins we use for our cube you can use for example pins 1, 2, 3, 4, 5 in port B 
 #define PTB2 7
 #define PTB3 8
 #define PTB4 9
