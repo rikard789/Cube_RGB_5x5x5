@@ -9,7 +9,7 @@ Working demonstration(pl)(click on the image below to watch on youtube)
 
 <p align="center">
   
-[![Prezentacja działania kostki RGB 5x5x5](https://user-images.githubusercontent.com/41265252/122605744-288e4f00-d078-11eb-9579-0f591c1224b7.png)](https://https://www.youtube.com/watch?v=ej48UOplicw "Prezentacja działania kostki RGB 5x5x5")
+[![Prezentacja działania kostki RGB 5x5x5](https://i9.ytimg.com/vi_webp/ej48UOplicw/mqdefault.webp?sqp=CKyruIYG&rs=AOn4CLDtBxMOD9hB22tXV5ytPIZJE5BuXA)](https://https://www.youtube.com/watch?v=ej48UOplicw "Prezentacja działania kostki RGB 5x5x5")
   
 </p>
 
