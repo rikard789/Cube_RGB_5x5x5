@@ -2,9 +2,9 @@
 
 
 #include "MKL05Z4.h"                    	/* Device header */
-#include "CubeL.h"												/* Cube 5x5x5 */
-#include "buttons.h"											/* Buttons of external keyboard */
-#include <stdlib.h>                       /* Pseudorandom number generator */
+#include "CubeL.h"				/* Cube 5x5x5 */
+#include "buttons.h"				/* Buttons of external keyboard */
+#include <stdlib.h>                      	/* Pseudorandom number generator */
 
 
 
