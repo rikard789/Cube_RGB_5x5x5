@@ -1,5 +1,5 @@
 #include "MKL05Z4.h"                    //Device header
-#include "buttons.h"												//Declarations
+#include "buttons.h"			//Declarations
 #include "CubeL.h"	
 
 
@@ -14,8 +14,8 @@ for(j = 0; j < 3500; j++) {}
 
 void buttonsInitialize(void)
 {
-	SIM->SCGC5 |= SIM_SCGC5_PORTB_MASK; /* Enable clock for GPIO B */
-	PORTB->PCR[BUTTON_1_POS] |= PORT_PCR_MUX(1); /* Set Pin 1 MUX as GPIO */
+	SIM->SCGC5 |= SIM_SCGC5_PORTB_MASK; // Enable clock for GPIO B 
+	PORTB->PCR[BUTTON_1_POS] |= PORT_PCR_MUX(1); // Set Pin 1 MUX as GPIO 
 	PORTB->PCR[BUTTON_2_POS] |= PORT_PCR_MUX(1); 
 	PORTB->PCR[BUTTON_3_POS] |= PORT_PCR_MUX(1);
 	PORTB->PCR[BUTTON_4_POS] |= PORT_PCR_MUX(1);	
@@ -25,13 +25,13 @@ void buttonsInitialize(void)
 	PORTB->PCR[BUTTON_3_POS] |= PORT_PCR_PE_MASK | PORT_PCR_PS_MASK;
 	PORTB->PCR[BUTTON_4_POS] |= PORT_PCR_PE_MASK | PORT_PCR_PS_MASK;
 	
-	PORTB -> PCR[BUTTON_1_POS] |= PORT_PCR_IRQC(0xa);
+	PORTB -> PCR[BUTTON_1_POS] |= PORT_PCR_IRQC(0xa); // Set interrupt if rising slope is detected
 	PORTB -> PCR[BUTTON_2_POS] |= PORT_PCR_IRQC(0xa);
 	PORTB -> PCR[BUTTON_3_POS] |= PORT_PCR_IRQC(0xa);
 	PORTB -> PCR[BUTTON_4_POS] |= PORT_PCR_IRQC(0xa);
-	NVIC_ClearPendingIRQ(PORTB_IRQn);
-	NVIC_EnableIRQ(PORTB_IRQn);
-	NVIC_SetPriority (PORTB_IRQn, 0);
+	NVIC_ClearPendingIRQ(PORTB_IRQn);	// Remove pending interrupts
+	NVIC_EnableIRQ(PORTB_IRQn);	// Initialization of NVIC on Port B
+	NVIC_SetPriority (PORTB_IRQn, 0);	// Set priority for interrupts on Port B
 	
 }
 
